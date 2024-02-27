@@ -16,8 +16,8 @@ const App = () => {
       <div className="ml-4 mb-4">
         <Form input={input} setInput={setInput} todos={todos} setTodos={setTodos} />
       </div>
-      <div>
-        <TodosList />
+      <div className="mx-4 pb-4">
+        <TodosList todos={todos} setTodos={setTodos} />
       </div>
     </div>
   )
