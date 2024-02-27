@@ -1,14 +1,17 @@
 import Header from "./components/Header"
 import Form from "./components/Form"
 import TodosList from "./components/TodosList"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const App = () => {
 
   const [input, setInput] = useState("")
   const [todos, setTodos] = useState([])
 
-
+  useEffect( () => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
+  
   
   
   return (
