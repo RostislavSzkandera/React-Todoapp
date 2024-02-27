@@ -6,7 +6,13 @@ import { useState, useEffect } from "react"
 const App = () => {
 
   const [input, setInput] = useState("")
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([savedData])
+
+  useEffect( () => {
+    const savedData = JSON.parse(localStorage.getItem("todos")) || []
+    
+
+  }, [])
 
   useEffect( () => {
     localStorage.setItem("todos", JSON.stringify(todos))
