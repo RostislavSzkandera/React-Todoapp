@@ -4,15 +4,10 @@ import TodosList from "./components/TodosList"
 import { useState, useEffect } from "react"
 
 const App = () => {
-
+  const savedData = JSON.parse(localStorage.getItem("todos")) || []
   const [input, setInput] = useState("")
   const [todos, setTodos] = useState([savedData])
 
-  useEffect( () => {
-    const savedData = JSON.parse(localStorage.getItem("todos")) || []
-    
-
-  }, [])
 
   useEffect( () => {
     localStorage.setItem("todos", JSON.stringify(todos))
