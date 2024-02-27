@@ -4,8 +4,8 @@ import TodosList from "./components/TodosList"
 
 const App = () => {
   return (
-    <div>
-      <div>
+    <div className="font-PTSans">
+      <div className="my-4">
         <Header />
       </div>
       <div>
