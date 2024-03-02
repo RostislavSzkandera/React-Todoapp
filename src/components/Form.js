@@ -14,7 +14,7 @@ const Form = ({input, setInput, todos, setTodos}) => {
       <section>
         <form onSubmit={formSubmit}>
           <input 
-              className="bg-blue-800 w-[200px] md:w-[300px] rounded outline-none p-2 placeholder:text-[#e4c5c5]"
+              className="bg-white w-[200px] md:w-[300px] rounded outline-none p-2 placeholder:text-gray-500"
               type="text" 
               placeholder="Jaký je další úkol?"
               onChange={ (e) => setInput(e.target.value)}
@@ -22,7 +22,7 @@ const Form = ({input, setInput, todos, setTodos}) => {
               required
           />
           <input 
-              className="bg-gray-600 rounded ml-4 p-2 cursor-pointer hover:bg-gray-700"
+              className="bg-gray-400 rounded ml-4 p-2 cursor-pointer sm:hover:bg-gray-600"
               type="submit" 
               value="Přidat"
   

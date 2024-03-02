@@ -16,7 +16,7 @@ const App = () => {
   
   
   return (
-    <div className="font-PTSans max-w-[350px] text-[20px] md:max-w-[600px] min-h-[200px] bg-blue-400 rounded-md mx-auto mt-40 mb-20">
+    <div className="font-PTSans max-w-[350px] text-[20px] md:max-w-[600px] min-h-[200px] bg-yellow-400 rounded-md mx-auto mt-40 mb-20">
       <div className="my-4">
         <Header />
       </div>
