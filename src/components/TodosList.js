@@ -44,10 +44,10 @@ const TodosList = ({todos, setTodos}) => {
                 </li>
                 <div className="flex flex-row justify-center items-center">
                     <button onClick={ () => completedTodo(oneTodo.id)} >
-                        <MdCloudDone className="text-gray-400 sm:hover:text-gray-600" size={30} />
+                        <MdCloudDone className="text-red-500 sm:hover:text-red-700" size={30} />
                     </button>
                     <button onClick={ () => deleteTodo(oneTodo.id)} className="mx-4">
-                        <MdDelete className="text-gray-400 sm:hover:text-gray-600" size={30} />
+                        <MdDelete className="text-red-500 sm:hover:text-red-700" size={30} />
                     </button>
                 </div>
             </div>

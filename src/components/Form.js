@@ -22,7 +22,7 @@ const Form = ({input, setInput, todos, setTodos}) => {
               required
           />
           <input 
-              className="bg-gray-400 rounded ml-4 p-2 cursor-pointer sm:hover:bg-gray-600"
+              className="bg-red-500 rounded ml-4 p-2 cursor-pointer text-white sm:hover:bg-red-700"
               type="submit" 
               value="Přidat"
   
